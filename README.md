@@ -62,11 +62,11 @@ The goal is to understand:
 
 ## Current status
 
-The project structure is ready.
+Day 1 complete.
 
 The first step is to open:
 
-`docs/01-product-context.md`
+[docs/01-product-context.md](docs/01-product-context.md)
 
 ## Limitations
 

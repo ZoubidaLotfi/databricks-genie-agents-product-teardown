@@ -1,3 +1,5 @@
 # Images
 
-Organize product screenshots, architecture diagrams, agent responses, dashboard comparisons, benchmark charts, and prototype images by date and purpose. TODO: capture only authorized screenshots, remove sensitive information, and cite product evidence in relevant docs.
+| File | Purpose |
+| --- | --- |
+| `genie-agent-architecture.jpg` | Shows where the Genie Agent fits within the broader governed data product |
