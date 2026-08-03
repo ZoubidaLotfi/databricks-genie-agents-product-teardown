@@ -1,6 +1,6 @@
 # Day 1 working notes
 
-## Module 1: Prepare your workspace
+## Module 1: Workspace preparation
 
 - [x] GitHub repository created with a defined README file.
 - [x] Databricks workspace created. Sample explored and datasets selected.
@@ -42,11 +42,11 @@ Generated SQL
 Answer, table, or visualization
 ```
 
-### Step 4. Create your glossary
+### Step 4. Create the glossary
 
 - [x] Glossary `research/glossary.md` created and pushed to Git.
 
-## Module 3: Define the user problem
+## Module 3: User problem definition
 
 ### Step 5. Select one primary user
 
@@ -65,7 +65,7 @@ The product manager is responsible for:
 
 The product manager understands business metrics but does not write advanced SQL.
 
-### Step 6. Describe the current workflow
+### Step 6. The current workflow Description
 
 - [x] Example workflow written in `research/product-brief.md` and committed to Git.
 
@@ -80,7 +80,7 @@ The product manager understands business metrics but does not write advanced SQL
 8. Follow-up questions restart the process.
 ```
 
-### Step 7. Write the user frustrations
+### Step 7. User frustrations
 
 - Waiting for data analysts
 - Limited dashboard flexibility
@@ -90,7 +90,7 @@ The product manager understands business metrics but does not write advanced SQL
 - Difficulty knowing which data was used
 - Dependence on technical teams
 
-### Step 8. Write the job to be done
+### Step 8. The job to be done
 
 > Product Managers often depend on data analysts for follow-up questions, but giving them direct access to enterprise data through AI only creates value if the answers are reliable, understandable, and based on well-governed data.
 
@@ -106,7 +106,7 @@ Everything you build during the week must help answer this question.
 
 > Databricks Genie Agents can reduce the time Product Managers spend waiting for analysts, but the reliability of their answers depends on clear business definitions, accurate and updated data, strong metadata, and proper data governance.
 
-### Step 11. Define what you will evaluate
+### Step 11. What will be evaluated
 
 | Evaluation area | Main question |
 | --- | --- |
@@ -131,20 +131,20 @@ Everything you build during the week must help answer this question.
 
 ### Checkpoint
 
-You should now be able to explain:
+At this point I shoukd be able to explain:
 
 - Who the user is
 - What problem they have
 - What Genie promises to solve
 - What you intend to test
 
-## Module 5: Define the business scenario
+## Module 5: Business scenario definition
 
-### Step 14. Define the business situation
+### Step 13. Business situation
 
 > A manager at Wanderbricks wants to understand booking performance, cancellations, revenue, and customer satisfaction without waiting for a data analyst.
 
-### Step 15. Define the decisions Genie should support
+### Step 14. Define the decisions Genie should support
 
 The Genie Agent should help managers decide where to focus, which problems need attention, and what may be causing changes in booking performance.
 
@@ -158,7 +158,7 @@ The Genie Agent should help managers decide where to focus, which problems need 
 | **Which areas may need action** | Which destinations have high demand but poor customer satisfaction? |
 | **What managers should investigate next** | What explains a recent drop in bookings or revenue? |
 
-## Module 6: Draw the project architecture
+## Module 6: The project architecture
 
 A simple architecture diagram can help explain how Genie Agents work.
 
@@ -166,17 +166,17 @@ A simple architecture diagram can help explain how Genie Agents work.
 
 ### Checkpoint
 
-You should understand where the agent fits within the broader data product. The agent is not the entire system. It depends on the data, metrics, metadata, and governance underneath it.
+It should be clear where the agent fits within the broader data product. The agent is not the entire system. It depends on the data, metrics, metadata, and governance underneath it.
 
-## Module 7: Set up Databricks
+## Module 7: Databricks set up
 
 - [x] Databricks Free Edition workspace created and tested.
 
-## Module 8: Set up GitHub
+## Module 8: GitHub set up
 
 - [x] GitHub repository now contains the project description and initial folders.
 
-## Module 9: Write your open questions
+## Module 9: Open questions
 
 - How much semantic configuration is needed?
 - How does Genie respond to ambiguous terminology?
@@ -187,17 +187,3 @@ You should understand where the agent fits within the broader data product. The 
 - Which features are available in Free Edition?
 - How should agent quality be measured?
 
-## End-of-day submission
-
-| Deliverable |
-| --- |
-| `README.md` |
-| `research/product-brief.md` |
-| `research/research-log.md` |
-| `research/glossary.md` |
-| Product architecture diagram |
-| Databricks workspace |
-| Working SQL schema |
-| Test table and query |
-| GitHub repository |
-| Day 2 dataset plan |
