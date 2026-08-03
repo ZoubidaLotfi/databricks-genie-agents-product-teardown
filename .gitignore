@@ -1,0 +1,39 @@
+# Python and environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Secrets and Databricks authentication/configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.token
+.databrickscfg
+.databricks/
+
+# Editors and operating systems
+.vscode/settings.json
+.idea/
+.DS_Store
+Thumbs.db
+
+# Temporary and build artifacts
+tmp/
+temp/
+*.tmp
+*.log
+build/
+dist/
+
+# Generated or private large artifacts
+data/generated/
+data/raw/
+evaluation/raw-exports/
+*.mp4
+*.mov
+recordings/
+images/tmp/

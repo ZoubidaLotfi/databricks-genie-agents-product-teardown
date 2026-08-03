@@ -1,0 +1,7 @@
+-- Future validation queries for synthetic data and governed metrics.
+-- TODO: row counts by table/date; null checks for keys and required fields.
+-- TODO: duplicate checks for table grain and event/ticket identifiers.
+-- TODO: referential-integrity checks for account/user/feature foreign keys.
+-- TODO: date-range, future-date, and event-before-user-created checks.
+-- TODO: impossible-value checks (negative MRR, invalid status, unsupported segment).
+-- TODO: metric reconciliation between approved implementations and dashboard/agent outputs.
