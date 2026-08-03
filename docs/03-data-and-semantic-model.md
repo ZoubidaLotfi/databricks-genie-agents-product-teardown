@@ -55,29 +55,7 @@ These six tables are enough for the first version of the teardown.
 
 ## 2. Relationship map
 
-```text
-destinations
-    1
-    |
-    | destination_id
-    |
-    many
-properties
-    1
-    |
-    | property_id
-    |
-    many
-bookings
-    1
-    |-------------------- many booking_updates
-    |
-    | booking_id
-    |
-    |-------------------- many payments
-    |
-    |-------------------- zero or many reviews
-```
+![Wanderbricks table relationship map](../images/wanderbricks-relationship-map.jpg)
 
 Additional review relationships:
 
