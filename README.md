@@ -1,57 +1,76 @@
 # Databricks Genie Agents Product Teardown
 
-## Objective
-Evaluate whether **Databricks Genie Agents** can provide trustworthy, domain-specific self-service analytics for SaaS product teams without excessive configuration, governance, monitoring, and maintenance work for data teams.
+## Goal
 
-- **Primary product:** Databricks Genie Agents
-- **Main question:** Can Databricks Genie Agents deliver trustworthy domain-specific self-service analytics while keeping setup and ongoing maintenance manageable for data teams?
-- **Business user:** Senior Product Manager at a B2B SaaS company
-- **Builder/operator:** Data Product Manager, Analytics Engineer, Data Analyst, or Data Engineer
-- **Hypothesis:** Domain-specific conversational analytics may reduce time to insight, but trust depends on governed data, approved metrics, semantic context, instructions, verified SQL, trusted assets, continuous evaluation, and human oversight.
+This project is a beginner-friendly teardown of Databricks Genie Agents.
 
-## Why Genie Agents
+The goal is to understand:
 
-The teardown focuses on a configured agent rather than a generic conversational interface: it can be grounded in a product domain and evaluated against a repeatable benchmark. Unity Catalog, metric views, governed tables, SQL warehouses, AI/BI Dashboards, and Genie Code are supporting components only when they enable or assess the agent.
+1. Who uses Genie Agents?
+2. What problem do they solve?
+3. What data do they need?
+4. What questions can business users ask?
+5. How do they generate answers?
+6. How are they different from dashboards?
+7. What must the data team configure?
+8. Where could the product fail?
 
-## What will be built and evaluated
+## What I will build
 
-1. Synthetic FlowSync SaaS data model, proposed metric definitions, and validation SQL.
-2. A proposed `FlowSync Product Intelligence Agent` configuration and a dashboard baseline.
-3. A benchmark with gold SQL/answers, repeated runs, failure analysis, and configuration history.
+* A simple SaaS dataset
+* Basic business metric definitions
+* One AI/BI dashboard
+* One Genie Agent
+* A list of 30 business questions
+* A product improvement proposal
+* A portfolio case study and LinkedIn carousel
 
-Evaluation dimensions: answer, SQL, metric, semantic, join, filter, and date correctness; ambiguity/refusal quality; transparency; consistency; latency; and user/builder correction effort.
+## Seven-day plan
 
-## Seven-day overview
+| Day | Main outcome                                                |
+| --- | ----------------------------------------------------------- |
+| 1   | Complete the AI/BI course and define the user problem       |
+| 2   | Prepare the dataset and metric definitions                  |
+| 3   | Build the dashboard and Genie Agent                         |
+| 4   | Ask 30 questions and review the answers                     |
+| 5   | Analyze the user journey, competitors, and product strategy |
+| 6   | Design an Analytics Trust Center prototype                  |
+| 7   | Publish the article, carousel, and portfolio case study     |
 
-| Day | Focus |
-| --- | --- |
-| 1 | Product context, access, official evidence |
-| 2 | Synthetic data model and metrics |
-| 3 | Dashboard baseline |
-| 4 | Proposed agent configuration |
-| 5 | Benchmark and gold references |
-| 6 | Test, diagnose, iterate |
-| 7 | Recommendation and case study |
+## Dashboard versus Genie Agent
 
-## Documentation
+| Dashboard                  | Genie Agent                  |
+| -------------------------- | ---------------------------- |
+| Shows predefined charts    | Answers flexible questions   |
+| Uses fixed filters         | Supports follow-up questions |
+| Easier to control          | More difficult to predict    |
+| Best for regular reporting | Best for exploration         |
 
-- [Product context](docs/01-product-context.md)
-- [User problem](docs/02-user-problem.md)
-- [Data and semantic model](docs/03-data-and-semantic-model.md)
-- [Dashboard baseline](docs/04-dashboard-baseline.md)
-- [Genie Agent setup](docs/05-genie-agent-setup.md)
-- [Genie Agent evaluation](docs/06-genie-agent-evaluation.md)
-- [Product recommendation](docs/07-product-recommendation.md)
-- [Final case-study outline](docs/final-case-study.md)
-- [Research log](research/research-log.md), [glossary](research/glossary.md), [assumptions](research/assumptions.md), [open questions](research/open-questions.md)
-- [Evaluation workspace](evaluation/README.md)
+## Repository structure
 
-## Status and limitations
+| Folder or file  | What it contains                             |
+| --------------- | -------------------------------------------- |
+| `README.md`     | Project overview and weekly plan             |
+| `docs/`         | Main teardown documents and final case study |
+| `research/`     | Notes, sources, assumptions, and definitions |
+| `data/`         | Sample dataset and data dictionary           |
+| `sql/`          | Queries and business metric definitions      |
+| `evaluation/`   | The 30 questions and answer observations     |
+| `images/`       | Screenshots and diagrams                     |
+| `presentation/` | LinkedIn carousel and portfolio materials    |
+| `notebooks/`    | Optional data preparation work               |
 
-**Status: scaffold only.** No product testing, external research, user feedback, or benchmark results have been completed. All configurations, formulas, and examples are proposals pending validation.
+## Current status
 
-This project uses synthetic data; it is an independent product study, not Databricks guidance or endorsement. Features may vary by workspace, edition, region, and preview availability.
+The project structure is ready.
 
-## Repository map
+The first step is to open:
 
-`docs/` contains the narrative; `data/` the synthetic-data design; `sql/` proposed logic; `evaluation/` test artifacts; `research/` evidence and questions; and `images/`, `presentation/`, and `notebooks/` hold supporting assets.
+`docs/01-product-context.md`
+
+## Limitations
+
+* This is a learning and portfolio project
+* The dataset is synthetic
+* The review is not a production or engineering audit
+* The conclusions will come from a one-week product exploration
