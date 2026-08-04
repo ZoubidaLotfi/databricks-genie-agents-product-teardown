@@ -6,21 +6,17 @@ The completed Wanderbricks dashboard provides a fixed baseline for comparing a t
 
 The dashboard is designed to answer a predefined set of business questions using validated datasets and visualizations.
 
-## Dashboard evidence
+The completed dashboard provides a fixed baseline for comparing the dashboard with the Genie Agent.
 
-Add the final dashboard screenshot here:
+The dashboard is designed to answer a predefined set of business questions using validated datasets and visualizations.
 
-```markdown
-![Wanderbricks dashboard baseline](../images/day-3/dashboard-baseline.png)
-```
+### Dashboard evidence
+KPI cards:
 
-Recommended screenshot path:
+Visualization charts:
 
-```text
-images/day-3/dashboard-baseline.png
-```
 
-## Questions answered by the dashboard
+### Questions answered by the dashboard
 
 | Business question | Dashboard element | Baseline result |
 |---|---|---|
@@ -34,7 +30,7 @@ images/day-3/dashboard-baseline.png
 | Which high-volume destinations have the highest cancellation rates? | Cancellation-rate comparison chart | Cancellation rates are closely clustered across high-volume destinations |
 | Which destinations differ most from the overall average rating? | Rating-difference chart | Destination ratings vary only slightly from the overall average |
 
-## What the dashboard answers well
+### What the dashboard answers well
 
 The dashboard answers questions that were defined before it was built.
 
@@ -51,7 +47,7 @@ It provides quick access to:
 
 The dashboard is useful when users repeatedly need the same metrics and comparisons.
 
-## Dashboard limitations
+### Dashboard limitations
 
 The dashboard answers predefined questions, but it does not easily answer every new follow-up question.
 
@@ -71,7 +67,7 @@ Answering these questions would require:
 
 The dashboard therefore provides reliable and consistent answers, but it offers limited flexibility for unplanned business questions.
 
-## Filter limitations
+### Filter limitations
 
 The dashboard contains the following interactive filters:
 
@@ -89,7 +85,7 @@ For example:
 
 This is an important dashboard design limitation and should be considered when comparing it with the Genie Agent.
 
-## Baseline conclusion
+### Baseline conclusion
 
 The dashboard is effective for monitoring a fixed set of validated business metrics.
 
