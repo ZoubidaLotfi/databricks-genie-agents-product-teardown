@@ -95,7 +95,8 @@ These instructions are intended to give the Agent stable business rules that app
 
 ### Agent configuration evidence
 
-![[Pasted image 20260804234317.png]]
+![Agent setup](../images/agent-1.png)
+
 
 ---
 
@@ -122,7 +123,7 @@ They reference the three persistent analysis views rather than the temporary `cu
 
 ### Example-query evidence
 
-![[Pasted image 20260805001520.png]]
+![Agent setup](../images/agent-2.png)
 
 > [!NOTE]
 > Example queries are part of the Agent configuration. They help the Agent generate SQL for similar questions. Benchmark questions should remain separate because they are used to evaluate the Agent rather than teach it.
@@ -135,39 +136,39 @@ Eight basic questions were asked to confirm that the Agent functions and underst
 
 ### 1. How many total bookings are there?
 
-![[Pasted image 20260805001714.png]]
+![Agent setup](../images/agent-3.png)
 
 ### 2. How many bookings are completed?
 
-![[Pasted image 20260805001802.png]]
+![Agent setup](../images/agent-5.png)
 
 ### 3. What is the cancellation rate?
 
-![[Pasted image 20260805001847.png]]
+![Agent setup](../images/agent-6.png)
 
 ### 4. Which destination has the most bookings?
 
-![[Pasted image 20260805002017.png]]
+![Agent setup](../images/agent-7.png)
 
 ### 5. Show bookings by month
 
-![[Pasted image 20260805002130.png]]
+![Agent setup](../images/agent-9.png)
 
 ### 6. Which destinations have the highest completed payment amount?
 
-![[Pasted image 20260805002305.png]]
+![Agent setup](../images/agent-10.png)
 
 ### 7. What is the average rating by destination?
 
-![[Pasted image 20260805002515.png]]
+![Agent setup](../images/agent-11.png)
 
-![[Pasted image 20260805002616.png]]
+![Agent setup](../images/agent-12.png)
 
 ### 8. Which high-volume destinations have below-average ratings?
 
-![[Pasted image 20260805002744.png]]
+![Agent setup](../images/agent-13.png)
 
-![[Pasted image 20260805002817.png]]
+![Agent setup](../images/agent-14.png)
 
 ---
 
