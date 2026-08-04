@@ -12,9 +12,10 @@ The dashboard is designed to answer a predefined set of business questions using
 
 ### Dashboard evidence
 KPI cards:
+![Wanderbricks dashboard baseline](../images/day-3/KPI cards.png)
 
 Visualization charts:
-
+![Wanderbricks dashboard baseline](../images/day-3/dashboard-baseline.png)
 
 ### Questions answered by the dashboard
 
