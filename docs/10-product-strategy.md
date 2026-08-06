@@ -1,4 +1,4 @@
-# Part 3: Databricks product-strategy analysis
+# Databricks product-strategy analysis
 
 ## Goal
 
@@ -41,7 +41,7 @@ The core strategic challenge is not only giving users a chat interface. It is ma
 
 The canvas summarizes who Genie serves, the problem it addresses, how it creates value, and the main risks.
 
-![Databricks Genie Agent product strategy canvas](product-strategy-canvas.png)
+![Databricks Genie Agent product strategy canvas](../images/product-strategy-canvas.png)
 
 ---
 
@@ -61,7 +61,7 @@ The canvas summarizes who Genie serves, the problem it addresses, how it creates
 
 ## 5. SWOT analysis
 
-![SWOT analysis of Databricks Genie Agent](swot-analysis.png)
+![SWOT analysis of Databricks Genie Agent](../images/swot-analysis.png)
 
 ---
 
