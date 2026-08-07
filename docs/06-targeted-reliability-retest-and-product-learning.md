@@ -8,7 +8,7 @@ This is **not a full second benchmark**. Only the questions affected by the inst
 
 > **Product goal:** test whether a small configuration change can improve reliability before considering broader product or governance changes.
 
-The detailed question-level evidence is documented in the [research file](../research/06-targeted-instruction-retest-research.md).
+The detailed question-level evidence is documented in the [research file](../research/day-6-targeted-instruction-retest-research.md).
 
 ---
 
