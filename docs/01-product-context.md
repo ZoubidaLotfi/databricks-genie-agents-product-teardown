@@ -127,7 +127,7 @@ A manager at Wanderbricks wants to understand booking performance, cancellations
 
 ## 13. Project architecture
 
-![Databricks Genie Agent architecture](../images/genie-agent-architecture.jpg)
+![Databricks Genie Agent architecture](../images/genie-agent-architecture.png)
 
 The Genie Agent is the user-facing layer, but it is not the entire data product. Reliable answers depend on the business definitions, metadata, governance, permissions, and clean, updated enterprise data underneath it. The data team prepares and maintains these supporting layers.
 
@@ -140,18 +140,8 @@ The Genie Agent is the user-facing layer, but it is not the entire data product.
 | Enterprise Data | Provides the clean and updated business tables |
 | Data Team | Prepares and maintains the data, definitions, metadata, and permissions |
 
-## 14. Open questions
 
-- How much semantic configuration is needed?
-- How does Genie respond to ambiguous terminology?
-- Can users inspect generated SQL?
-- How does Genie handle missing information?
-- How consistent are repeated answers?
-- How do Genie Agents differ from ordinary chat mode?
-- Which features are available in Free Edition?
-- How should agent quality be reviewed?
-
-## 15. Day 1 conclusion
+## 14. Conclusion
 
 - The product and target user are defined.
 - The main question and hypothesis are defined.
