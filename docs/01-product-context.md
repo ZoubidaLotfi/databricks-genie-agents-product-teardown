@@ -1,4 +1,4 @@
-# Databricks Genie Agents Product Context
+# Databricks Genie Agents Product Discovery & Scope
 
 ## Objective
 
@@ -86,7 +86,7 @@ Databricks Genie Agents can reduce the time Product Managers spend waiting for a
 
 ## 10. Evaluation areas
 
-| Area | What we evaluated |
+| Area | What will be evaluated |
 |---|---|
 | **Answer correctness** | Whether Genie returned the correct result, used the right SQL, and answered the intended question. |
 | **Business definitions and assumptions** | Whether Genie used the right metric definitions, thresholds, filters, and assumptions. |
@@ -141,10 +141,39 @@ The Genie Agent is the user-facing layer, but it is not the entire data product.
 | Data Team | Prepares and maintains the data, definitions, metadata, and permissions |
 
 
-## 14. Conclusion
+## 14. Definition of Done
 
-- The product and target user are defined.
-- The main question and hypothesis are defined.
-- Wanderbricks is selected as the practical example.
-- The architecture and governance dependency are understood.
-- No dashboard, agent, benchmark, or final answer review has been completed yet.
+This discovery and scoping phase is complete when:
+
+- [x] The product and its role in the analytics workflow are understood.
+- [x] The primary target user is defined.
+- [x] The current analytics workflow and its main frustrations are identified.
+- [x] The initial Job to be Done is defined.
+- [x] The main teardown question is clear.
+- [x] The initial product hypothesis is documented.
+- [x] The evaluation areas are defined.
+- [x] Wanderbricks is selected as the practical test scenario.
+- [x] The main business questions and decisions to investigate are identified.
+- [x] The Genie architecture and its dependencies on business context, governance, and enterprise data are understood.
+- [x] The role of the data team is identified.
+- [x] The project scope is clear enough to move to deeper user-problem analysis.
+
+### Out of scope for this phase
+
+The following work will be completed in later stages:
+
+- [ ] Validate the user problem in more detail.
+- [ ] Build and evaluate the dashboard baseline.
+- [ ] Configure the Genie Agent.
+- [ ] Run the benchmark.
+- [ ] Analyze failures and improve the configuration.
+- [ ] Retest affected questions.
+- [ ] Develop and validate the product recommendation.
+
+### Decision gate
+
+**Decision: proceed to user-problem analysis.**
+
+The product, target user, hypothesis, scope, evaluation criteria, and technical
+dependencies are clear enough to move from broad discovery into a deeper
+analysis of the user problem.
