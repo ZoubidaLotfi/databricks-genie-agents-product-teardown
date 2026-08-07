@@ -190,53 +190,14 @@ For a business-facing analytics Agent, reliability also depends on:
 
 This phase follows a simple product improvement cycle:
 
-```text
-Benchmark
-   ↓
-Identify failure patterns
-   ↓
-Prioritize the highest-risk issues
-   ↓
-Change one part of the configuration
-   ↓
-Retest affected questions
-   ↓
-Measure improvements and regressions
-   ↓
-Refine again
-```
+![Benchmark Improvement Loop](../images/benchmark-improvement-loop.png)
 
 This keeps the teardown evidence-driven rather than making broad configuration changes without measuring their impact.
 
 ---
 
-## 10. Next reliability priorities
 
-Based on the retest, the next priorities are:
-
-### P0: Protect analytical populations
-
-Genie should not silently change which records or destinations are included when calculating averages.
-
-### P0: Enforce explicit user constraints
-
-Thresholds, units, and requested comparison logic should survive all the way to the final answer.
-
-### P1: Improve time-boundary logic
-
-Complete periods should be defined relative to the available dataset, not automatically to the current date.
-
-### P1: Handle undefined quantitative terms safely
-
-Terms such as **high volume** should trigger a clear assumption or clarification.
-
-### P1: Make evidence quality visible
-
-Small samples should include not only the count, but also a clear warning about reliability.
-
----
-
-## 11. Definition of Done
+## 10. Definition of Done
 
 This targeted improvement phase is complete when:
 
@@ -252,7 +213,7 @@ This targeted improvement phase is complete when:
 
 ---
 
-## 12. Decision Gate
+## 11. Decision Gate
 
 **Decision: keep the instruction improvements, but do not treat instructions as sufficient governance.**
 
