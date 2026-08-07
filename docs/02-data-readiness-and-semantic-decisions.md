@@ -104,21 +104,22 @@ The following assumptions are accepted for this teardown:
 
 Keeping these assumptions visible is important because they may affect how Genie interprets future questions.
 
-## 7. Open questions and risk backlog
+## 7. Key risks addressed
 
-Not every semantic question is fully resolved at this stage.
+The data-preparation phase identified several risks that could affect the
+dashboard and Genie evaluation.
 
-The main items to keep visible during testing are:
+| Risk | How it was addressed |
+| --- | --- |
+| **Stale booking status** | Current booking state was reconstructed using the latest booking update. |
+| **Metric ambiguity** | Working definitions were created for bookings, cancellations, payments, and ratings. |
+| **Booking value vs collected payment** | The two concepts were separated to avoid treating booking amount as collected revenue. |
+| **Payment retries** | Completed payments and distinct bookings were used where appropriate to avoid overcounting. |
+| **Review bias** | Ratings were treated as feedback from reviewers, not as a measure of the full customer population. |
+| **Missing business context** | Important assumptions such as date fields, cancellation logic, and metric limitations were documented for later testing. |
 
-- What currency does the payment amount use?
-- Are refunds or payment reversals stored elsewhere?
-- Should cancellation rate use terminal bookings or all created bookings?
-- Which date should be used for booking trends?
-- How should low review coverage affect satisfaction comparisons?
-- Should Genie disclose when reconstructed booking status is being used?
-- How clearly should Genie distinguish booking value from collected payment amount?
-
-These are treated as an **assumption and risk backlog** rather than hidden implementation details.
+These decisions reduce avoidable data and semantic errors before comparing the
+dashboard baseline with the Genie Agent.
 
 ## 8. Product principle for the next phases
 
