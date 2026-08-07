@@ -8,7 +8,7 @@ The comparison focuses on one product question:
 
 > **How well does each product help a business user move from a natural-language question to a trustworthy, actionable answer from enterprise data?**
 
-The detailed scoring, vendor evidence, and source notes are documented in the [competitive research file](../research/08-competitive-analysis-research.md).
+The detailed scoring, vendor evidence, and source notes are documented in the [competitive research file](../research/day-8-competitive-analysis-research.md).
 
 > [!NOTE] Evidence confidence
 >
