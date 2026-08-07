@@ -9,8 +9,13 @@ This phase looks at the experience from both sides of the product:
 
 The goal is to understand where Genie removes friction, where work shifts to the data team, and where trust can break.
 
-> **Scope note:** This is a reconstructed current-state journey based on hands-on setup, product observations, the 30-question benchmark, and the targeted retest. It has not been validated through direct customer interviews.
-
+> **Scope note:** This journey is based on hands-on Genie setup, the 30-question benchmark,
+> and the targeted retest.
+>
+> Detailed evidence, question-level examples, and the full journey matrices are
+> documented in:
+>
+> [User Journey Evidence Research](../research/day-7-user-journey-evidence-research.md)
 ---
 
 ## 1. Jobs to Be Done
@@ -93,8 +98,6 @@ Prepare → Define → Configure → Test → Benchmark → Improve → Retest �
 | **Release** | Decide which use cases are safe | High-risk questions may reach users too early |
 | **Monitor** | Track failures, corrections, and latency | Quality can drift over time |
 
-### Operating-model insight
-
 Genie does not remove analytics work.
 
 It **shifts part of that work** from repeated analyst requests toward:
@@ -111,25 +114,7 @@ This is an important product trade-off.
 
 ## 4. Moments of trust
 
-Trust increases when Genie:
-
-- Matches trusted results
-- Preserves explicit thresholds
-- States the date field used
-- Shows assumptions
-- Includes sample size
-- Avoids unsupported terminology
-- Makes the calculation easy to inspect
-
-Trust decreases when Genie:
-
-- Changes a user-provided threshold
-- Invents a currency
-- Calls completed payment amount “revenue”
-- Treats an incomplete period as complete
-- Uses a small sample without warning
-- Produces a chart that hides important differences
-- Drops a limitation from the final answer
+![Trust increases and decreases](../images/trust-increases-vs-decreases.png)
 
 ---
 
@@ -176,35 +161,7 @@ This would reduce the gap between **answer generation** and **decision confidenc
 
 ---
 
-## 7. PM prioritization
-
-### P0: Protect business meaning
-
-Prevent silent changes to:
-
-- Metric definitions
-- Explicit thresholds
-- Analytical populations
-
-### P0: Surface decision-critical warnings
-
-Make missing currency, incomplete periods, and weak sample sizes visible before the answer is used.
-
-### P1: Preserve context across follow-ups
-
-Keep assumptions and definitions stable across related questions.
-
-### P1: Improve shareability
-
-Shared results should carry the assumptions and limitations needed to interpret them correctly.
-
-### P2: Reduce administrator effort
-
-Add reusable templates, regression checks, and readiness criteria for Genie configurations.
-
----
-
-## 8. Definition of Done
+## 7. Definition of Done
 
 This user-journey phase is complete when:
 
@@ -221,14 +178,17 @@ This user-journey phase is complete when:
 
 ---
 
-## 9. Decision Gate
+## 8. Decision Gate
 
-**Decision: proceed from journey analysis to product opportunity definition.**
+**Decision: proceed to competitive analysis.**
 
-The teardown now shows where Genie creates value and where trust breaks.
+The journey analysis clarified where Genie creates value, where friction remains,
+and where trust breaks for both business users and administrators.
 
-The next product work should focus on the **Ask → Verify → Decide** gap, where business users need clearer evidence that the Agent used the right definitions, assumptions, and analytical context.
+The next step is to compare Genie with alternative analytics products and
+understand whether these strengths and weaknesses are specific to Genie or
+common across the market.
 
 ### Product question for the next phase
 
-> **How might Genie make trust-critical context visible before a business user acts on an answer?**
+> **How does Databricks Genie compare with competing analytics products on flexibility, reliability, governance, and ease of use?**
