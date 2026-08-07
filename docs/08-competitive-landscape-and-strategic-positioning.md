@@ -76,47 +76,9 @@ Each product is strongest in a different environment, and only Genie was directl
 
 ## 4. Market patterns
 
-The products fall into three main approaches.
+The products fall into three main approaches:
 
-### Platform-native
-
-**Databricks, Snowflake, Microsoft Fabric**
-
-Strength:
-- Deep governance and data-platform integration
-
-Trade-off:
-- Best value usually comes when the organization already uses that ecosystem
-
-### Analytics-native
-
-**ThoughtSpot**
-
-Strength:
-- Business-user self-service and conversational exploration
-
-Trade-off:
-- Documented strengths were not independently benchmarked here
-
-### BI-native
-
-**Tableau**
-
-Strength:
-- Strong visual analysis, dashboards, and sharing
-
-Trade-off:
-- Less centered on transparent natural-language-to-SQL analysis
-
-### Substitute workflow
-
-**Human analyst**
-
-Strength:
-- Strong context, clarification, and judgment
-
-Trade-off:
-- Slower and harder to scale for routine questions
+![Main competitive approaches](../images/main-competitive-approaches.png)
 
 ---
 
