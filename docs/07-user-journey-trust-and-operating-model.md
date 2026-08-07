@@ -142,22 +142,23 @@ while still applying the wrong business meaning.
 
 ---
 
-## 6. Product opportunity
+## 6. Opportunity Area: Decision Confidence
 
-The biggest opportunity is to make trust information visible without forcing business users to inspect SQL.
+The journey analysis revealed a gap between **getting an answer** and **knowing whether it is safe to use**.
 
-The experience should make it easier to see:
+Users may not immediately know:
 
-- Metric definition
-- Filters
-- Thresholds
-- Date period
-- Assumptions
-- Sample size
-- Missing units or currency
-- Data limitations
+- Which definition Genie used
+- Which filters or thresholds were applied
+- Whether assumptions were introduced
+- Whether the sample size is reliable
+- Whether important limitations are missing
 
-This would reduce the gap between **answer generation** and **decision confidence**.
+### Opportunity statement
+
+> **How might we make the context behind a Genie answer easier to understand before users act on it?**
+
+This opportunity will be carried into the competitive analysis before proposing a product solution.
 
 ---
 
