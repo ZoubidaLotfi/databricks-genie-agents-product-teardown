@@ -1,1 +1,107 @@
-question_id,intent_id,category,question,user_persona,business_criticality,expected_interpretation,gold_sql,expected_result,expected_clarification,expected_refusal,generated_sql,generated_answer,answer_correct,sql_correct,metric_correct,semantic_correct,join_correct,filter_correct,date_period_correct,ambiguity_handled,clarification_quality,unsupported_request_handled,refusal_quality,visualization_suitable,explanation_quality,transparent_reasoning,latency_seconds,user_correction_effort,builder_correction_effort,failure_type,recommended_fix,configuration_change,rerun_result,notes
+# Evaluation
+
+This folder contains the evaluation framework used to test the reliability of the Wanderbricks Databricks Genie Agent.
+
+The goal is to make the benchmark process **repeatable, transparent, and separate from the Agent configuration**.
+
+## Evaluation approach
+
+The Genie Agent was evaluated against independently calculated reference answers.
+
+The process was:
+
+1. Define a business question
+2. Calculate the trusted reference result in Databricks SQL
+3. Ask the same question to Genie
+4. Capture the Agent answer and generated SQL
+5. Compare the result with the trusted reference
+6. Score the answer across defined quality dimensions
+7. Record issues and observations
+
+This prevents the Agent from being evaluated only on whether its SQL executes.
+
+## Benchmark template
+
+The benchmark template defines the structure used for each test question.
+
+It captures information such as:
+
+- Question ID
+- Question category
+- Business question
+- Trusted result
+- Expected behavior
+- Agent answer
+- Agent SQL
+- Numerical correctness
+- SQL correctness
+- Business-definition compliance
+- Clarity
+- Assumption handling
+- Total score
+- Reliability classification
+- Issue notes
+
+The template should remain separate from completed benchmark results so it can be reused for future Agent evaluations.
+
+## Scoring model
+
+Each answer is scored across five dimensions:
+
+| Dimension | What it checks |
+| --- | --- |
+| **Numerical correctness** | Whether the result is mathematically correct |
+| **SQL correctness** | Whether the correct data, joins, filters, and logic were used |
+| **Definition compliance** | Whether the agreed business definitions were followed |
+| **Clarity** | Whether the final answer is clear and not misleading |
+| **Assumption handling** | Whether assumptions are avoided, disclosed, or clarified |
+
+Each dimension is scored from **0 to 2**, giving a maximum score of **10**.
+
+| Score | Classification |
+| ---: | --- |
+| **9–10** | Reliable |
+| **7–8** | Acceptable with minor issues |
+| **5–6** | Requires analyst review |
+| **0–4** | Failed |
+
+## Benchmark scope
+
+The main benchmark contains **30 questions** across five categories:
+
+- Core metric accuracy
+- Time and trend analysis
+- Segmentation and ranking
+- Data quality and ambiguity
+- Multi-step and follow-up analysis
+
+A later targeted retest reran **11 questions** affected by configuration changes.
+
+The targeted retest should not be interpreted as a complete second 30-question benchmark.
+
+## Evaluation principle
+
+A key principle of this teardown is:
+
+> **Valid SQL does not automatically mean a trustworthy business answer.**
+
+An answer can execute successfully and return a plausible number while still using:
+
+- The wrong business definition
+- A changed threshold
+- An unsupported currency
+- The wrong date period
+- A weak sample size
+- The wrong analytical population
+
+The evaluation therefore measures both **technical correctness** and **business meaning**.
+
+## Folder contents
+
+A recommended structure is:
+
+```text
+evaluation/
+├── README.md
+├── benchmark-template.csv
+└── targeted-retest-template.csv
