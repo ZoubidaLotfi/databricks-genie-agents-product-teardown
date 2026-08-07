@@ -57,9 +57,9 @@ This makes the benchmark closer to a **product-quality evaluation** than a simpl
 | Failed | **4 (13.3%)** |
 | Observed response time | **29–60 seconds** |
 
-### Accuracy view
+### Accuracy overview
 
-![Accuracy View](../images/accuracy-overview.png)
+![Accuracy View](../images/accuracy-view.png)
 
 The gap between numerical correctness and definition compliance is the most important result.
 
