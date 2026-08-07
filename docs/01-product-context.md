@@ -1,8 +1,8 @@
-# Day 1: Databricks Genie Agents Product Context
+# Databricks Genie Agents Product Context
 
-## Day 1 objective
+## Objective
 
-Day 1 establishes what Databricks Genie Agents are, who uses them, and the user problem they address. It also defines the main teardown question, hypothesis, evaluation areas, Wanderbricks business scenario, and where the agent fits within the broader data product.
+In this document I will establishe what Databricks Genie Agents are, who uses them, and the user problem they address. I will define the main teardown question, hypothesis, evaluation areas, Wanderbricks business scenario, and where the agent fits within the broader data product.
 
 ## 1. Workspace status
 
@@ -10,8 +10,6 @@ Day 1 establishes what Databricks Genie Agents are, who uses them, and the user 
 - Databricks Free Edition workspace created.
 - Wanderbricks sample data explored.
 - Initial dataset tables selected.
-
-No dashboard, Genie Agent, benchmark, or final analysis has been completed yet.
 
 ## 2. Understanding the product
 
