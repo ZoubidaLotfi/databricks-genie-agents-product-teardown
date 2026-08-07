@@ -100,37 +100,6 @@ Without that layer, easier access can also make incorrect interpretations easier
 
 ![SWOT analysis](../images/swot-analysis.png)
 
-### Strengths
-
-- Natural-language access to governed enterprise data
-- Strong Databricks platform integration
-- Visible generated SQL
-- Follow-up analysis
-- Good performance on clearly defined metrics
-
-### Weaknesses
-
-- Requires semantic preparation and configuration
-- Ambiguous questions can produce plausible but incorrect interpretations
-- Instructions are not followed consistently
-- Some generated visualizations reduce clarity
-- Reliability testing creates administrator effort
-
-### Opportunities
-
-- Make business definitions and assumptions more visible
-- Reduce configuration and testing effort
-- Improve regression testing and quality controls
-- Strengthen trust signals for business users
-- Extend Genie further into applications and agent workflows
-
-### Threats
-
-- Natural-language analytics is becoming common across competitors
-- Competitors are investing heavily in semantic governance and evaluation
-- Trust can fall quickly after incorrect business answers
-- Platform-specific assistants may increase ecosystem lock-in on all sides
-
 ---
 
 ## 6. Opportunity prioritization
@@ -211,14 +180,14 @@ This product-strategy phase is complete when:
 
 ## 9. Decision Gate
 
-**Decision: proceed to solution definition around decision confidence.**
+**Decision: move forward with the Analytics Trust Center prototype.**
 
-The teardown evidence now supports a focused product opportunity:
+The teardown showed that Genie can return a correct-looking answer while still using the wrong business meaning.
 
-> Business users need a lightweight way to understand the trust-critical context behind a Genie answer before they use, share, or act on it.
+The proposed **Analytics Trust Center** directly addresses this gap. Its role is to help business users quickly see when an answer may need extra attention, without forcing them to inspect SQL.
 
-The next phase should explore a solution that improves this experience **without adding unnecessary friction to answers that are already straightforward**.
+The next phase will define and prototype the **Analytics Trust Center** and test whether it makes risky Genie answers easier to review.
 
 ### Product question for the next phase
 
-> **How might Genie surface trust-critical definitions, assumptions, and limitations only when they matter?**
+> **Can a lightweight Trust Center help users spot important risks before they trust, share, or act on a Genie answer?**
