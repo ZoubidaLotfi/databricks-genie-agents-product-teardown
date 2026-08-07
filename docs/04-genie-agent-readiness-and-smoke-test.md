@@ -47,7 +47,7 @@ Key guardrails included:
 
 Example SQL patterns were also added for common questions so the Agent had reference examples for the agreed metric logic.
 
-The detailed configuration is documented in the [technical research file](../research/04-genie-agent-setup-and-smoke-test-research.md).
+The detailed configuration is documented in the [technical research file](../research/day-4-genie-agent-setup-and-smoke-test-research.md).
 
 ---
 
