@@ -14,7 +14,7 @@ The benchmark goes beyond checking whether SQL runs. It evaluates whether Genie:
 
 > **Benchmark goal:** measure whether Genie can provide flexible analytics without weakening trust in the underlying business meaning.
 
-The detailed question-level evidence is documented in the [research file](../research/05-genie-quality-benchmark-research.md).
+The detailed question-level evidence is documented in the [research file](../research/day-5-genie-quality-benchmark-research.md).
 
 ---
 
