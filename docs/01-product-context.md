@@ -56,14 +56,7 @@ This user wants faster answers without waiting for a data analyst.
 
 The current workflow, drawn from the [product brief](../research/product-brief.md), is:
 
-1. The Product Manager notices a change in a dashboard.
-2. They want to understand why it happened.
-3. The existing dashboard does not provide enough detail.
-4. They ask a data analyst for help.
-5. The analyst translates the business question into SQL.
-6. The analyst checks the metric definitions and data quality.
-7. The Product Manager receives the answer hours or days later.
-8. Follow-up questions restart the process.
+![Current analytics workflow](../images/current-analytics-workflow.png)
 
 This creates delays and makes follow-up questions dependent on the data team.
 
@@ -85,7 +78,7 @@ When business performance changes, I want to investigate governed business data 
 
 Can Databricks Genie Agents help Product Managers investigate business data faster while still providing reliable answers based on well-governed enterprise data?
 
-All later work should help answer this question.
+All later work will help answer this question.
 
 ## 9. Hypothesis
 
@@ -93,15 +86,17 @@ Databricks Genie Agents can reduce the time Product Managers spend waiting for a
 
 ## 10. Evaluation areas
 
-| Area | What it evaluates |
-| --- | --- |
-| Time to insight | Whether users can reach useful answers more quickly. |
-| Answer correctness | Whether generated SQL and answers are accurate. |
-| Data quality | How data freshness, completeness, duplication, and cleanliness affect answers. |
-| Business definitions and metadata | Whether clear definitions, descriptions, and relationships help the agent interpret the business correctly. |
-| Maintenance effort | How much setup and ongoing correction the data team needs. |
+| Area | What we evaluated |
+|---|---|
+| **Answer correctness** | Whether Genie returned the correct result, used the right SQL, and answered the intended question. |
+| **Business definitions and assumptions** | Whether Genie used the right metric definitions, thresholds, filters, and assumptions. |
+| **Data quality and context** | Whether issues such as stale data, incomplete periods, duplicate records, missing currency, or small samples could affect the answer. |
+| **Response time** | How long Genie took to return an answer during the benchmark and retest. |
+| **Setup and maintenance effort** | The work needed to prepare the data, configure Genie, test answers, fix issues, and retest changes. |
 
 ## 11. Practical scope
+
+Before evaluating Genie, I needed a realistic business scenario and dataset to test it against. For this teardown, I use **Wanderbricks**, a sample travel-booking business, to simulate the types of questions a Product Manager might ask about bookings, cancellations, payments, and customer ratings.
 
 Wanderbricks is the practical example for this teardown. The scope covers:
 
