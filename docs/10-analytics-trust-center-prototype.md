@@ -283,22 +283,24 @@ This prototype phase is complete when:
 
 ---
 
-## 14. Decision Gate
+## 14. Final Product Decision
 
-**Decision: keep the Analytics Trust Center as the proposed product solution.**
+**Recommendation: keep the Analytics Trust Center as the proposed improvement for Genie.**
 
-The concept directly addresses the strongest opportunity found across the teardown:
+Why:
 
-> Business users can receive a plausible Genie answer without clearly seeing the definitions, assumptions, or limitations that affect whether it should be trusted.
+- The benchmark exposed semantic trust issues.
+- The retest showed that instructions alone are not enough.
+- The user journey showed the highest risk at **Ask → Verify → Decide**.
+- Competitors are also investing in governance and transparency.
 
-The prototype is worth carrying into the final product recommendation because it:
+### Final direction
 
-- Targets a problem observed repeatedly in the benchmark
-- Supports the user-journey need for better decision confidence
-- Fits the competitive shift toward governance and transparency
-- Builds on Genie's existing interface instead of replacing it
-- Adds friction only when a trust issue is detected
+The Trust Center should:
 
-### Final product question
+- Appear only when a trust issue is detected
+- Explain the issue in simple business language
+- Show key definitions, assumptions, thresholds, and limitations
+- Help users decide whether an answer is safe to use or share
 
-> **Can the Analytics Trust Center improve decision confidence without making Genie slower or harder to use?**
+> **The goal is not to guarantee correctness. It is to make important risks visible before the user acts.**
