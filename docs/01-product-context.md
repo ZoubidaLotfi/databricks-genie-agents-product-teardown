@@ -147,33 +147,41 @@ This discovery and scoping phase is complete when:
 
 - [x] The product and its role in the analytics workflow are understood.
 - [x] The primary target user is defined.
-- [x] The current analytics workflow and its main frustrations are identified.
+- [x] The current analytics workflow and main user frustrations are identified.
 - [x] The initial Job to be Done is defined.
 - [x] The main teardown question is clear.
 - [x] The initial product hypothesis is documented.
 - [x] The evaluation areas are defined.
 - [x] Wanderbricks is selected as the practical test scenario.
 - [x] The main business questions and decisions to investigate are identified.
-- [x] The Genie architecture and its dependencies on business context, governance, and enterprise data are understood.
+- [x] The Genie architecture and its dependency on business context, governance, and enterprise data are understood.
 - [x] The role of the data team is identified.
-- [x] The project scope is clear enough to move to deeper user-problem analysis.
+- [x] The scope is clear enough to define the data and semantic model required for testing.
 
 ### Out of scope for this phase
 
-The following work will be completed in later stages:
+The following work belongs to later stages of the teardown:
 
-- [ ] Validate the user problem in more detail.
-- [ ] Build and evaluate the dashboard baseline.
+- [ ] Select and validate the data used by the teardown.
+- [ ] Define table relationships and business metrics.
+- [ ] Investigate data-quality issues and assumptions.
+- [ ] Build the dashboard baseline.
 - [ ] Configure the Genie Agent.
-- [ ] Run the benchmark.
-- [ ] Analyze failures and improve the configuration.
-- [ ] Retest affected questions.
+- [ ] Run the benchmark and analyze failures.
+- [ ] Improve and retest the Agent.
 - [ ] Develop and validate the product recommendation.
 
 ### Decision gate
 
-**Decision: proceed to user-problem analysis.**
+**Decision: proceed to data and semantic modeling.**
 
-The product, target user, hypothesis, scope, evaluation criteria, and technical
-dependencies are clear enough to move from broad discovery into a deeper
-analysis of the user problem.
+The product, user, hypothesis, business scenario, evaluation criteria, and scope
+are clear enough to define the data foundation that Genie will rely on.
+
+The next phase will determine:
+
+- Which Wanderbricks tables are needed
+- How those tables relate to each other
+- Which business metrics need clear definitions
+- Which data-quality issues could affect answers
+- Which assumptions must be documented before testing Genie
