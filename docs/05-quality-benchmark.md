@@ -13,7 +13,7 @@ The benchmark compares the Agent's responses and generated SQL with independent 
 The full row-level evidence is stored in:
 
 ```text
-research/day-4-benchmark-results.csv
+research/day-5-benchmark-results.csv
 ```
 
 ---
