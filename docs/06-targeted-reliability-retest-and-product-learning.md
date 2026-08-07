@@ -152,37 +152,7 @@ These regressions matter because they show that improving one instruction area c
 
 The retest supports two conclusions at the same time:
 
-### What instructions can do
-
-Instructions can materially improve:
-
-- Threshold compliance
-- Business terminology
-- Currency handling
-- Assumption disclosure
-- Some limitation handling
-
-### What instructions cannot guarantee
-
-Instructions alone do not fully control:
-
-- Final-answer wording
-- Analytical populations
-- Time-boundary logic
-- Small-sample interpretation
-- Ambiguous quantitative terms
-
-### Key product insight
-
-> **Better instructions improve reliability, but they are not a complete governance layer.**
-
-For a business-facing analytics Agent, reliability also depends on:
-
-- Governed metric definitions
-- Strong examples
-- Regression testing
-- Visible assumptions
-- Analyst review for sensitive questions
+![Instructions vs governance canvas](../images/instructions-vs-governance-canvas.png)
 
 ---
 
