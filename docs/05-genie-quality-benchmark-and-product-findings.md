@@ -59,9 +59,7 @@ This makes the benchmark closer to a **product-quality evaluation** than a simpl
 
 ### Accuracy view
 
-- **80%** of answers were numerically correct.
-- **60%** used fully correct and appropriate SQL.
-- **60%** fully followed the intended business definitions.
+![Accuracy View](../images/accuracy-overview.png)
 
 The gap between numerical correctness and definition compliance is the most important result.
 
@@ -149,23 +147,7 @@ The performance pattern suggests that reliability falls as questions require mor
 
 The benchmark highlights a clear gap between **answer generation** and **answer trust**.
 
-### What Genie already does well
-
-- Queries prepared enterprise data
-- Handles common metrics
-- Supports natural-language follow-ups
-- Produces working SQL
-- Reduces friction for routine analysis
-
-### What still needs stronger control
-
-- Metric definitions
-- Explicit thresholds
-- Units and currency
-- Ambiguous terminology
-- Sample-size warnings
-- Complete-period logic
-- Assumption disclosure
+![Genie strengths vs controls](../images/genie-benchmark-conclusion.png)
 
 This is the area where configuration, governance, and product-level trust features become important.
 
