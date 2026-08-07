@@ -85,25 +85,7 @@ It only means that this trust layer did not detect a known issue.
 
 ## 4. Main user flow
 
-```text
-User asks a question
-        ↓
-Genie returns an answer
-        ↓
-Trust issue detected?
-      ↙       ↘
-    No         Yes
-    ↓           ↓
-Normal      Review trust
-answer      issues appears
-                ↓
-        User opens panel
-                ↓
-      Risks are explained
-                ↓
-     User decides whether
-      to trust or use it
-```
+![Main user flow](../images/main-user-flow(1).png)
 
 The Trust Center is therefore an **exception layer**, not a permanent part of every answer.
 
@@ -149,7 +131,7 @@ Example warnings:
 - Refund treatment is unclear
 - Date period is unclear
 
-![Screen 2: Trust Issues Review](../images/screen-two-2.png)
+![Screen 2: Trust Issues Review](../images/screen-two.png)
 
 ---
 
