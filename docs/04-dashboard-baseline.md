@@ -1,104 +1,135 @@
-# Dashboard Baseline
+# Dashboard Baseline & Reference Experience
 
-## Purpose
+## Objective
 
-The completed Wanderbricks dashboard provides a fixed baseline for comparing a traditional dashboard with the Databricks Genie Agent.
+Before testing Databricks Genie, I created a **dashboard baseline** to represent the current analytics experience available to a Product Manager.
 
-The dashboard is designed to answer a predefined set of business questions using validated datasets and visualizations.
+The dashboard acts as a **reference point** for the teardown.
 
-The completed dashboard provides a fixed baseline for comparing the dashboard with the Genie Agent.
+It helps answer a simple comparison question:
 
-The dashboard is designed to answer a predefined set of business questions using validated datasets and visualizations.
+> Can Genie make business analysis more flexible without losing the consistency and trust provided by a predefined dashboard?
 
-### Dashboard evidence
-KPI cards:
+The dashboard is intentionally built around a fixed set of validated metrics and business questions.
+
+---
+
+## 1. Baseline scope
+
+The dashboard focuses on the main Wanderbricks decisions defined earlier in the teardown.
+
+It covers:
+
+- Booking volume
+- Completed and cancelled bookings
+- Cancellation rate
+- Completed payment amount
+- Booking trends
+- Destination performance
+- Destination cancellation rates
+- Customer ratings
+
+It is not designed to answer every possible business question.
+
+That limitation is intentional because it represents the traditional dashboard experience that Genie will later be compared against.
+
+---
+
+## 2. Dashboard evidence
+
+### KPI overview
 
 ![Wanderbricks KPI cards](../images/kpi-cards.png)
 
-Visualization charts:
+### Main dashboard
 
 ![Wanderbricks dashboard baseline](../images/dashboard-baseline.png)
 
-### Questions answered by the dashboard
+---
 
-| Business question | Dashboard element | Baseline result |
-|---|---|---|
-| How many bookings exist? | Total bookings KPI | 72,247 |
-| How many bookings were completed? | Completed bookings KPI | 36,835 |
-| How many bookings were cancelled? | Executive summary dataset | 28,428 |
-| What is the cancellation rate? | Cancellation-rate KPI | 43.56% |
-| What is the completed payment amount? | Completed payment amount KPI | Approximately 25.3M, with currency unspecified |
-| Which destinations have the most bookings? | Top 10 destinations by bookings chart | Phuket, Gold Coast, Mallorca, Paris, and Abu Dhabi are among the highest-volume destinations |
-| How are bookings changing over time? | Bookings by month line chart | Booking volume increases strongly over the available period |
-| Which high-volume destinations have the highest cancellation rates? | Cancellation-rate comparison chart | Cancellation rates are closely clustered across high-volume destinations |
-| Which destinations differ most from the overall average rating? | Rating-difference chart | Destination ratings vary only slightly from the overall average |
+## 3. Core questions covered
 
-### What the dashboard answers well
+| Business need | Dashboard answer |
+| --- | --- |
+| Understand overall demand | **72,247** total bookings |
+| Track completed bookings | **36,835** completed bookings |
+| Track cancellations | **28,428** cancelled bookings |
+| Monitor cancellation performance | **43.56%** proposed cancellation rate |
+| Monitor completed payments | Approximately **25.3M**, currency not available in the dataset |
+| Compare destination demand | Phuket, Gold Coast, Mallorca, Paris, and Abu Dhabi are among the highest-volume destinations |
+| Understand booking trends | Booking volume increases strongly across the available period |
+| Compare cancellation performance | High-volume destinations have relatively similar cancellation rates |
+| Compare customer satisfaction | Average ratings vary only slightly across destinations |
 
-The dashboard answers questions that were defined before it was built.
+These results create the **known reference answers** that can later be compared with Genie.
 
-It provides quick access to:
+---
 
-- Overall booking volume
-- Completed and cancelled booking counts
-- The proposed cancellation rate
-- Completed payment amount
-- Booking trends over time
-- Destination booking performance
-- Destination cancellation comparisons
-- Destination rating comparisons
+## 4. What the baseline does well
 
-The dashboard is useful when users repeatedly need the same metrics and comparisons.
+The dashboard performs well when the business question is already known.
 
-### Dashboard limitations
+### Strengths
 
-The dashboard answers predefined questions, but it does not easily answer every new follow-up question.
+- **Fast access to recurring KPIs**
+- **Consistent metric definitions**
+- **Controlled calculations**
+- **Simple visual monitoring**
+- **Low user effort for common questions**
 
-For example, a user cannot immediately ask:
+From a product perspective, the dashboard works well for:
 
-- Why did bookings increase during a particular month?
+> **Monitoring known questions repeatedly.**
+
+A Product Manager can open the dashboard and quickly understand the metrics that were designed into it.
+
+---
+
+## 5. Where friction appears
+
+The main limitation appears when the user moves from **monitoring** to **investigation**.
+
+A Product Manager may see a change in the dashboard and immediately ask a new question, for example:
+
+- Why did bookings increase during a specific month?
 - Which property types have the highest cancellation rate?
+- Which destinations combine high demand with low ratings?
 - How do payment methods differ between countries?
-- Which destinations combine high booking volume with low ratings?
-- Are cancelled bookings associated with specific check-in periods?
+- Are cancellations concentrated around specific check-in periods?
 
-Answering these questions would require:
+These questions are not part of the predefined dashboard.
 
-1. Creating another dataset or changing an existing query
-2. Adding another visualization
-3. Updating and republishing the dashboard
+### Current follow-up workflow
 
-The dashboard therefore provides reliable and consistent answers, but it offers limited flexibility for unplanned business questions.
+![Current dashboard follow-up workflow](../images/current-dashboard-follow-up-workflow.png)
 
-### Filter limitations
+## 9. Definition of Done
 
-The dashboard contains the following interactive filters:
+The dashboard baseline phase is complete when:
 
-- Country
-- Destination
-- Booking month
+- [x] The agreed Wanderbricks metrics are represented.
+- [x] The dashboard uses the prepared data and semantic definitions.
+- [x] The main recurring business questions can be answered.
+- [x] KPI cards and core visualizations are available.
+- [x] Filter behavior is understood and documented.
+- [x] Known dashboard limitations are identified.
+- [x] The dashboard provides reference answers for later Genie testing.
+- [x] The main trade-off between consistency and flexibility is clear.
 
-Because the dashboard uses several separate datasets, not every filter affects every visualization.
+## 10. Decision Gate
 
-For example:
+**Decision: proceed to Genie Agent configuration and testing.**
 
-- Country and Destination primarily affect destination-based visualizations
-- Booking month primarily affects the monthly booking trend
-- The KPI cards display overall values unless their dataset is redesigned to include filterable dimensions
+The dashboard is stable enough to act as the baseline for the next phase.
 
-This is an important dashboard design limitation and should be considered when comparing it with the Genie Agent.
+The next step is to test whether Genie can:
 
-### Baseline conclusion
+- Answer the same core business questions correctly
+- Handle new and follow-up questions
+- Preserve the agreed metric definitions
+- Reduce dependency on predefined dashboards
+- Maintain enough transparency and trust for business use
 
-The dashboard is effective for monitoring a fixed set of validated business metrics.
+### Product question for the next phase
 
-Its main strengths are:
-
-- Consistent metric definitions
-- Fast access to common questions
-- Clear visual presentation
-- Low risk of users changing the underlying calculation
-
-Its main weakness is that users remain dependent on someone modifying the dashboard when a new business question appears.
-
-This dashboard baseline will be compared with the Genie Agent to evaluate whether natural-language analysis provides faster access to unplanned follow-up questions while maintaining reliable business definitions.
+> Can Genie add analytical flexibility without reducing reliability?
