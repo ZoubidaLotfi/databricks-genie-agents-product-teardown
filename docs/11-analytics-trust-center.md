@@ -53,7 +53,7 @@ The Trust Center button appears only when Genie detects a potential trust proble
 
 The main flow:
 
-![Analytics Trust Center main user flow](../images/main-user-flow.png)
+![Analytics Trust Center main user flow](../images/main-user-flow(1).png)
 
 ---
 
@@ -93,7 +93,7 @@ Its purpose is to help the user understand **why the answer may be risky to use 
 
 **Result:**
 
-![Screen 2 - Trust Issues Review](../images/screen-two-2.png)
+![Screen 2 - Trust Issues Review](../images/screen-two.png)
 
 ---
 
