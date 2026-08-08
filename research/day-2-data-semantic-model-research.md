@@ -57,7 +57,7 @@ These six tables are enough for the first version of the teardown.
 
 ## 2. Relationship map
 
-![Wanderbricks table relationship map](../images/wanderbricks-relationship-map.jpg)
+![Wanderbricks table relationship map](../images/wanderbricks-relationship-map.png)
 
 Additional review relationships:
 
