@@ -1,6 +1,6 @@
 # Assumptions & Validation Research
 
-## Purpose
+## Research purpose
 
 This register tracks the main assumptions made at the start of the teardown and whether the project evidence supported them.
 
@@ -69,3 +69,20 @@ The teardown did not validate:
 - Repeated-answer consistency
 
 These would require user research, pilots, or production usage data.
+
+## Research conclusion
+
+The assumptions register shows that the teardown validated the **technical and product-quality side** of Genie more strongly than the **adoption and operational side**.
+
+The strongest conclusions are:
+
+- Genie works best when business questions are clearly defined.
+- Semantic preparation and Agent instructions improve reliability.
+- Instructions alone do not prevent all semantic errors.
+- Valid SQL is not enough to guarantee a trustworthy business answer.
+- Regression testing is important because configuration changes can introduce new failures.
+- Business users need clearer visibility into definitions, assumptions, and limitations.
+
+The teardown therefore supports the idea that **trustworthy self-service analytics requires both strong configuration and visible business context**.
+
+Questions around adoption, long-term maintenance, builder workload, and Trust Center usability remain outside the evidence collected in this project.
