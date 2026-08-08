@@ -1,6 +1,6 @@
 # Wanderbricks Data & Semantic Model Research
 
-## Purpose
+## Research purpose
 
 This file contains the technical research behind the PM-facing data-readiness document.
 
@@ -589,7 +589,7 @@ The selected model should support questions such as:
 
 ---
 
-## 12. Research summary
+## 12. Research conclusion
 
 The Wanderbricks teardown will use six core tables:
 
