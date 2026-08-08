@@ -1,6 +1,6 @@
 # Product Discovery Research
 
-## Purpose
+## Research purpose
 
 This file contains the supporting research and early decisions behind the Product Discovery & Scope document.
 
@@ -82,3 +82,20 @@ The main supporting artifacts created during this phase are:
 - Initial product and architecture research
 
 The assumptions register preserves the hypotheses established before the benchmark and records which ones were eventually supported, rejected, or left untested.
+
+## Research conclusion
+
+The discovery phase helped narrow the teardown from a broad AI analytics project into a focused test of **reliability and trust in Genie**.
+
+The key decisions were:
+
+- Use Wanderbricks as the business scenario.
+- Focus on bookings, cancellations, payments, and ratings.
+- Treat revenue carefully because no approved definition was available.
+- Compare Genie with a dashboard baseline.
+- Evaluate both technical correctness and business meaning.
+- Exclude adoption, refusal behavior, and long-term maintenance from the formal scope.
+
+This gave the later benchmark a clear focus:
+
+> **Can Genie make business analysis more flexible without losing reliability and trust?**
