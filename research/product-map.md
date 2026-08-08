@@ -15,3 +15,7 @@ Generated SQL
       
 Answer, table, or visualization
 ```
+
+# Architecture:
+
+![Genie Agent architecture](../images/genie-agent-architecture.png)
