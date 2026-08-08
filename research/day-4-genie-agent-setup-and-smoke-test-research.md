@@ -1,6 +1,6 @@
 # Genie Agent Setup & Smoke Test Research
 
-## Research purpose
+## Purpose
 
 This file contains the detailed setup evidence and smoke-test results behind the PM-facing Genie readiness document.
 
