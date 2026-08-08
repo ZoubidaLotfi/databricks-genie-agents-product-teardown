@@ -1,6 +1,6 @@
 # Wanderbricks Data & Semantic Model Research
 
-## Research purpose
+## Purpose
 
 This file contains the technical research behind the PM-facing data-readiness document.
 
