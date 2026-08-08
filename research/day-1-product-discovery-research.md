@@ -78,7 +78,7 @@ The main supporting artifacts created during this phase are:
 
 - [Product assumptions](day-1-assumptions-and-validation-research.md)
 - [Product glossary](glossary.md)
-- [Initial product and architecture research](product-map.md)
+- [Product map and architecture research](product-map.md)
 
 The assumptions register preserves the hypotheses established before the benchmark and records which ones were eventually supported, rejected, or left untested.
 
